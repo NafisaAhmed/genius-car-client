@@ -27,7 +27,7 @@ const Checkout = () => {
         /* if (phone.length > 11) {
             alert('phone number should be 11 characters or long');
         } */
-        fetch('http://localhost:5000/orders', {
+        fetch('https://genius-car-server-swart.vercel.app/orders', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',

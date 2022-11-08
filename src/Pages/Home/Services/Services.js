@@ -6,7 +6,7 @@ import ServiceCard from './ServiceCard';
 const Services = () => {
     const [services, setServices] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://genius-car-server-swart.vercel.app/services')
             .then(res => res.json())
             .then(data => setServices(data))
     }, [])
@@ -25,6 +25,9 @@ const Services = () => {
                     ></ServiceCard>)
                 }
             </div>
+            <p className='text-center mt-5'>
+                <button className='btn btn-secondary'>More Services</button>
+            </p>
         </div>
     );
 };
